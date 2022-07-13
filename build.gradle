@@ -1,0 +1,100 @@
+plugins {
+    id 'java'
+}
+
+group 'appiumTestDevicesFW'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+task openUIautomatorviewer(type: Exec) {
+    commandLine 'uiautomatorviewer'
+
+    //store the output instead of printing to the console:
+    standardOutput = new ByteArrayOutputStream()
+
+    //extension method stopTomcat.output() can be used to obtain the output:
+    ext.output = {
+        return standardOutput.toString()
+    }
+}
+
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.testng/testng
+    compile group: 'org.testng', name: 'testng', version: '6.14.3'
+
+//    // https://mvnrepository.com/artifact/com.github.webdriverextensions/webdriverextensions
+//    implementation group: 'com.github.webdriverextensions', name: 'webdriverextensions', version: '3.11.2'
+
+    // https://mvnrepository.com/artifact/com.codeborne/selenide-appium
+    implementation group: 'com.codeborne', name: 'selenide-appium', version: '2.1.0'
+
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.24'
+
+// https://mvnrepository.com/artifact/io.qameta.allure/allure-selenide
+    implementation group: 'io.qameta.allure', name: 'allure-selenide', version: '2.18.1'
+
+    compile 'org.apache.httpcomponents:httpmime:4.5.13'
+
+    // https://mvnrepository.com/artifact/io.rest-assured/rest-assured
+    compile group: 'io.rest-assured', name: 'rest-assured', version: '4.3.0'
+
+    // https://mvnrepository.com/artifact/io.rest-assured/json-path
+    compile group: 'io.rest-assured', name: 'json-path', version: '4.3.0'
+
+    // https://mvnrepository.com/artifact/io.rest-assured/xml-path
+    compile group: 'io.rest-assured', name: 'xml-path', version: '4.3.0'
+
+    // https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
+    compile group: 'io.rest-assured', name: 'json-schema-validator', version: '4.3.0'
+
+    // https://mvnrepository.com/artifact/log4j/log4j
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
+    // https://mvnrepository.com/artifact/com.browserstack/browserstack-local-java
+    compile group: 'com.browserstack', name: 'browserstack-local-java', version: '1.0.5'
+
+    // https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+
+    // https://mvnrepository.com/artifact/com.codepine.api/testrail-api-java-client
+    compile group: 'com.codepine.api', name: 'testrail-api-java-client', version: '2.0.1'
+
+    // https://mvnrepository.com/artifact/me.tongfei/progressbar
+    compile group: 'me.tongfei', name: 'progressbar', version: '0.8.1'
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi
+    compile group: 'org.apache.poi', name: 'poi', version: '4.1.2'
+
+    // https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml
+    compile group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+
+    // https://mvnrepository.com/artifact/com.browserstack/automate-client-java
+    compile group: 'com.browserstack', name: 'automate-client-java', version: '0.4'
+
+    compile 'org.slf4j:slf4j-api:1.7.36'
+    compile 'org.slf4j:slf4j-simple:1.7.36'
+
+    /// compile group: 'com.codepine.api', name: 'testrail-api-java-client', version: '2.0.1'
+    compile 'io.github.artur3280:TestRail-Api:0.6.8.2'
+
+    // https://mvnrepository.com/artifact/org.jsoup/jsoup
+    compile group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
+
+    /*----> Slack*/
+    // https://mvnrepository.com/artifact/com.slack.api/slack-api-model
+    implementation group: 'com.slack.api', name: 'slack-api-model', version: '1.6.1'
+
+    // https://mvnrepository.com/artifact/com.slack.api/slack-api-client
+    implementation group: 'com.slack.api', name: 'slack-api-client', version: '1.6.1'
+
+    // https://mvnrepository.com/artifact/io.github.sukgu/automation
+    // https://github.com/sukgu/shadow-automation-selenium
+    implementation group: 'io.github.sukgu', name: 'automation', version: '0.1.0'
+}

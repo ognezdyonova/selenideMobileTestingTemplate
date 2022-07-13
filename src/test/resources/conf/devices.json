@@ -1,0 +1,18 @@
+{
+  "android_environments": [
+    {
+      "device": "Google Pixel 5",
+      "os_version": "11.0"
+    },
+    {
+      "device": "Google Pixel 3",
+      "os_version": "9.0"
+    }
+  ],
+  "ios_environments": [
+    {
+      "device": "iPhone 12 Pro Max",
+      "os_version": "14"
+    }
+  ]
+}
