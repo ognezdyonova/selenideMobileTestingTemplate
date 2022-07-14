@@ -16,6 +16,7 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 import lombok.NonNull;
 import org.json.simple.JSONObject;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -87,6 +88,7 @@ public class Admin {
     public AddEnvironmentClinician addEnvironmentClinician(Map<String, Object> clinician) {
         return new AddEnvironmentClinician(clinician);
     }
+
     /**
      * @return GetSurveyList
      */

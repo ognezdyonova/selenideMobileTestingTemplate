@@ -1,10 +1,10 @@
 package api.requests.constants;
 
-import org.preject_name.core.rest.configs.Configurations;
-import org.preject_name.core.rest.loggers.ConsoleLogger;
+import core.ConsoleLogger;
+import core.config.Prop;
 
 public class Path {
-    public static String BASE_URI = Configurations.getConfigParam("host_{project_name}");
+    public static String BASE_URI = Prop.getField("api.base.url");
     public static final String API_V2 = "/apiv2";
     public static final String API_V1 = "/v1";
     public static final String API_ADMIN_V2 = "/v2";

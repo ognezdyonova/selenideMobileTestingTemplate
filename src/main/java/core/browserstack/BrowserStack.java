@@ -31,6 +31,7 @@ public class BrowserStack {
         Configuration.reportsFolder = "test-result/reports/".concat(Thread.currentThread().getName());
         return androidDriver;
     }
+
     //If necessary, if there are problems with the synchronization of drivers, use 'synchronized'
     public IOSDriver remoteIosDriver(String appName, String appBuild) {
         DesiredCapabilities caps = desiredCapabilitiesRemoteIOSDriver(appName, appBuild);

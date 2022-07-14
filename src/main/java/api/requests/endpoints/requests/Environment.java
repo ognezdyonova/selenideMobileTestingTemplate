@@ -15,6 +15,7 @@ import io.restassured.specification.RequestSpecification;
 public class Environment {
     /**
      * Get Environment Info by V2 endpoint
+     *
      * @return Get
      */
     public GetV2 getV2() {

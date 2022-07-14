@@ -1,8 +1,8 @@
 package api.apps.native_calc.MainScreen;
 
 import api.android.Android;
-import core.selectors.native_selectors.AndroidUiObject;
 import core.selectors.native_selectors.AndroidNativeSelector;
+import core.selectors.native_selectors.AndroidUiObject;
 
 public class MainScreenUIObjects {
     private static AndroidUiObject

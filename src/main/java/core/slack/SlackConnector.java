@@ -70,7 +70,7 @@ public class SlackConnector {
         }
     }
 
-    public void sendFile(String conversationId, String title, String file){
+    public void sendFile(String conversationId, String title, String file) {
         Logger logger = LoggerFactory.getLogger("my-awesome-slack-app");
         try {
             List channels = new ArrayList();

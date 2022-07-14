@@ -20,6 +20,7 @@ public class Android {
         WebDriverRunner.setWebDriver(DriverManager.getAndroidDriver());
         DriverManager.setAndroidDriver((AndroidDriver) WebDriverRunner.getWebDriver());
     }
+
     public static AndroidDriver driver() {
         return DriverManager.getAndroidDriver();
     }

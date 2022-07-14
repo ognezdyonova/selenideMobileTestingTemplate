@@ -1,7 +1,7 @@
 package api.apps.waybetter.waybetter_app.android.sign_up_screen;
 
-import core.selectors.native_selectors.AndroidUiObject;
 import core.selectors.native_selectors.AndroidNativeSelector;
+import core.selectors.native_selectors.AndroidUiObject;
 
 public class SignUpScreen {
     private static AndroidUiObject

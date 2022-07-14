@@ -16,12 +16,12 @@ public class ReportLocalCases {
         final Integer[] countTest = {0};
         cases.forEach(xmlSuite -> {
             System.out.println("Suite:" + xmlSuite.getName());
-            xmlSuite.getTests().forEach(t->{
+            xmlSuite.getTests().forEach(t -> {
 
-                t.getPackages().forEach(p->{
-                    System.out.println("Pack:"+p.getName());
+                t.getPackages().forEach(p -> {
+                    System.out.println("Pack:" + p.getName());
                     p.getXmlClasses().forEach(xmlClass -> {
-                        System.out.println("Class:"+xmlClass.getName());
+                        System.out.println("Class:" + xmlClass.getName());
                         for (Method method : xmlClass.getSupportClass().getDeclaredMethods()) {
                             if (method.getAnnotation(org.testng.annotations.Test.class) != null) {
                                 System.out.println(method.getName());

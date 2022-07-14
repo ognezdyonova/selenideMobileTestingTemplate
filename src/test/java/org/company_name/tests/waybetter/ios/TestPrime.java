@@ -8,7 +8,6 @@ import core.config.Prop;
 import core.constants.BuilderLogLevel;
 import core.managers.DriverManager;
 import org.apache.log4j.Level;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 
 public class TestPrime {

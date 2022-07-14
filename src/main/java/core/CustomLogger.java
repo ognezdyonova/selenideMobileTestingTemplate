@@ -7,8 +7,8 @@ public class CustomLogger {
     public static Logger log = Logger.getLogger(CustomLogger.class);
     private static boolean debug;
 
-    public static void debuggingApi(boolean debugStatus){
-        CustomLogger.log.info("Debug mode:"+ debugStatus);
+    public static void debuggingApi(boolean debugStatus) {
+        CustomLogger.log.info("Debug mode:" + debugStatus);
         debug = debugStatus;
     }
 

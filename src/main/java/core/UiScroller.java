@@ -18,34 +18,34 @@ public class UiScroller {
     }
 
     public String flingToBeginning(AndroidNativeSelector container, Integer maxSwipes) {
-        return locator + "(" + container + ").flingToBeginning("+maxSwipes+")";
+        return locator + "(" + container + ").flingToBeginning(" + maxSwipes + ")";
     }
 
     public String scrollToBeginning(AndroidNativeSelector container, Integer maxSwipes) {
-        return locator + "(" + container + ").scrollToBeginning("+maxSwipes+")";
+        return locator + "(" + container + ").scrollToBeginning(" + maxSwipes + ")";
     }
 
     public String scrollToBeginning(AndroidNativeSelector container, Integer maxSwipes, Integer steps) {
-        return locator + "(" + container + ").scrollToBeginning("+maxSwipes+","+steps+")";
+        return locator + "(" + container + ").scrollToBeginning(" + maxSwipes + "," + steps + ")";
     }
 
     public String scrollTextIntoView(AndroidNativeSelector container, String text) {
-        return locator + "(" + container + ").scrollTextIntoView("+text+")";
+        return locator + "(" + container + ").scrollTextIntoView(" + text + ")";
     }
 
     public String flingToEnd(AndroidNativeSelector container, Integer maxSwipes) {
-        return locator + "(" + container + ").flingToEnd("+maxSwipes+")";
+        return locator + "(" + container + ").flingToEnd(" + maxSwipes + ")";
     }
 
     public String scrollToEnd(AndroidNativeSelector container, Integer maxSwipes, Integer steps) {
-        return locator + "(" + container + ").flingToEnd("+maxSwipes+","+steps+")";
+        return locator + "(" + container + ").flingToEnd(" + maxSwipes + "," + steps + ")";
     }
 
     public String getChildByDescription(AndroidNativeSelector container, AndroidNativeSelector childPattern, String text) {
-        return locator + "(" + container + ").getChildByDescription("+childPattern+","+text+")";
+        return locator + "(" + container + ").getChildByDescription(" + childPattern + "," + text + ")";
     }
 
-    public String getLocator(){
+    public String getLocator() {
         return locator;
     }
 

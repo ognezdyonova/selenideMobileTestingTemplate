@@ -1,14 +1,14 @@
 package api.requests.models.environment;
 
+import api.requests.models.admin.admin_models.Settings;
+import api.requests.models.environment.data.EnvironmentSetting;
+import api.requests.models.environment.data.Metric;
+import api.requests.models.environment.data.PatientInfoCustomAttributes;
+import com.codeborne.selenide.Condition;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import lombok.*;
-import org.preject_name.models.admin.admin_models.Settings;
-import org.preject_name.models.environment.data.Condition;
-import org.preject_name.models.environment.data.EnvironmentSetting;
-import org.preject_name.models.environment.data.Metric;
-import org.preject_name.models.environment.data.PatientInfoCustomAttributes;
 
 import java.util.List;
 

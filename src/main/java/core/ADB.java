@@ -209,7 +209,7 @@ public class ADB {
     }
 
     public String turnOnWiFi(Boolean state) {
-        if(state)
+        if (state)
             return command("adb shell svc wifi enable");
         else
             return command("adb shell svc wifi disable");

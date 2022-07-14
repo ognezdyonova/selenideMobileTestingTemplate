@@ -1,38 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AppiumAUT>
-    <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="WayBetterStaging" label="WayBetterStaging" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-        <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="414" height="64" index="0"/>
-                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="1">
-                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="backgroundImage1" enabled="true" visible="false" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                                <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" accessible="false" x="0" y="0" width="414" height="736" index="0"/>
+    <XCUIElementTypeApplication type="XCUIElementTypeApplication" name="WayBetterStaging" label="WayBetterStaging"
+                                enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736"
+                                index="0">
+        <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0"
+                               width="414" height="736" index="0">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0"
+                                  y="0" width="414" height="736" index="0">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up"
+                                      enabled="true" visible="true" accessible="false" x="0" y="0" width="414"
+                                      height="736" index="0">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up"
+                                          enabled="true" visible="true" accessible="false" x="0" y="0" width="414"
+                                          height="736" index="0">
+                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up"
+                                              enabled="true" visible="true" accessible="false" x="0" y="0" width="414"
+                                              height="736" index="0">
+                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up"
+                                                  label="Log in Sign up" enabled="true" visible="true"
+                                                  accessible="false" x="0" y="0" width="414" height="736" index="0">
+                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up"
+                                                      label="Log in Sign up" enabled="true" visible="true"
+                                                      accessible="false" x="0" y="0" width="414" height="736" index="0">
+                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up"
+                                                          label="Log in Sign up" enabled="true" visible="true"
+                                                          accessible="false" x="0" y="0" width="414" height="736"
+                                                          index="0">
+                                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false"
+                                                              accessible="false" x="0" y="0" width="414" height="64"
+                                                              index="0"/>
+                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up"
+                                                              label="Log in Sign up" enabled="true" visible="true"
+                                                              accessible="false" x="0" y="0" width="414" height="736"
+                                                              index="1">
+                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up"
+                                                                  label="Log in Sign up" enabled="true" visible="true"
+                                                                  accessible="false" x="0" y="0" width="414"
+                                                                  height="736" index="0">
+                                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up"
+                                                                      label="Log in Sign up" enabled="true"
+                                                                      visible="true" accessible="false" x="0" y="0"
+                                                                      width="414" height="736" index="0">
+                                                    <XCUIElementTypeOther type="XCUIElementTypeOther"
+                                                                          name="Log in Sign up" label="Log in Sign up"
+                                                                          enabled="true" visible="true"
+                                                                          accessible="false" x="0" y="0" width="414"
+                                                                          height="736" index="0">
+                                                        <XCUIElementTypeOther type="XCUIElementTypeOther"
+                                                                              name="Log in Sign up"
+                                                                              label="Log in Sign up" enabled="true"
+                                                                              visible="true" accessible="false" x="0"
+                                                                              y="0" width="414" height="736" index="0">
+                                                            <XCUIElementTypeOther type="XCUIElementTypeOther"
+                                                                                  name="Log in Sign up"
+                                                                                  label="Log in Sign up" enabled="true"
+                                                                                  visible="true" accessible="false"
+                                                                                  x="0" y="0" width="414" height="736"
+                                                                                  index="0">
+                                                                <XCUIElementTypeOther type="XCUIElementTypeOther"
+                                                                                      name="Log in Sign up"
+                                                                                      label="Log in Sign up"
+                                                                                      enabled="true" visible="true"
+                                                                                      accessible="false" x="0" y="0"
+                                                                                      width="414" height="736"
+                                                                                      index="0">
+                                                                    <XCUIElementTypeOther type="XCUIElementTypeOther"
+                                                                                          name="Log in Sign up"
+                                                                                          label="Log in Sign up"
+                                                                                          enabled="true" visible="true"
+                                                                                          accessible="false" x="0" y="0"
+                                                                                          width="414" height="736"
+                                                                                          index="0">
+                                                                        <XCUIElementTypeOther
+                                                                                type="XCUIElementTypeOther"
+                                                                                name="Log in Sign up"
+                                                                                label="Log in Sign up" enabled="true"
+                                                                                visible="true" accessible="false" x="0"
+                                                                                y="0" width="414" height="736"
+                                                                                index="0">
+                                                                            <XCUIElementTypeOther
+                                                                                    type="XCUIElementTypeOther"
+                                                                                    name="backgroundImage1"
+                                                                                    enabled="true" visible="false"
+                                                                                    accessible="false" x="0" y="0"
+                                                                                    width="414" height="736" index="0">
+                                                                                <XCUIElementTypeImage
+                                                                                        type="XCUIElementTypeImage"
+                                                                                        enabled="true" visible="false"
+                                                                                        accessible="false" x="0" y="0"
+                                                                                        width="414" height="736"
+                                                                                        index="0"/>
                                                                             </XCUIElementTypeOther>
-                                                                            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="1">
-                                                                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="swiper" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                                    <XCUIElementTypeScrollView type="XCUIElementTypeScrollView" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                                        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                                            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                                                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="0">
-                                                                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="-15" width="414" height="737" index="0">
-                                                                                                        <XCUIElementTypeImage type="XCUIElementTypeImage" enabled="true" visible="false" accessible="false" x="0" y="-15" width="414" height="737" index="0"/>
+                                                                            <XCUIElementTypeOther
+                                                                                    type="XCUIElementTypeOther"
+                                                                                    enabled="true" visible="true"
+                                                                                    accessible="false" x="0" y="0"
+                                                                                    width="414" height="736" index="1">
+                                                                                <XCUIElementTypeOther
+                                                                                        type="XCUIElementTypeOther"
+                                                                                        name="swiper" enabled="true"
+                                                                                        visible="true"
+                                                                                        accessible="false" x="0" y="0"
+                                                                                        width="414" height="736"
+                                                                                        index="0">
+                                                                                    <XCUIElementTypeScrollView
+                                                                                            type="XCUIElementTypeScrollView"
+                                                                                            enabled="true"
+                                                                                            visible="true"
+                                                                                            accessible="false" x="0"
+                                                                                            y="0" width="414"
+                                                                                            height="736" index="0">
+                                                                                        <XCUIElementTypeOther
+                                                                                                type="XCUIElementTypeOther"
+                                                                                                enabled="true"
+                                                                                                visible="true"
+                                                                                                accessible="false" x="0"
+                                                                                                y="0" width="414"
+                                                                                                height="736" index="0">
+                                                                                            <XCUIElementTypeOther
+                                                                                                    type="XCUIElementTypeOther"
+                                                                                                    enabled="true"
+                                                                                                    visible="true"
+                                                                                                    accessible="false"
+                                                                                                    x="0" y="0"
+                                                                                                    width="414"
+                                                                                                    height="736"
+                                                                                                    index="0">
+                                                                                                <XCUIElementTypeOther
+                                                                                                        type="XCUIElementTypeOther"
+                                                                                                        enabled="true"
+                                                                                                        visible="true"
+                                                                                                        accessible="false"
+                                                                                                        x="0" y="0"
+                                                                                                        width="414"
+                                                                                                        height="736"
+                                                                                                        index="0">
+                                                                                                    <XCUIElementTypeOther
+                                                                                                            type="XCUIElementTypeOther"
+                                                                                                            enabled="true"
+                                                                                                            visible="false"
+                                                                                                            accessible="false"
+                                                                                                            x="0"
+                                                                                                            y="-15"
+                                                                                                            width="414"
+                                                                                                            height="737"
+                                                                                                            index="0">
+                                                                                                        <XCUIElementTypeImage
+                                                                                                                type="XCUIElementTypeImage"
+                                                                                                                enabled="true"
+                                                                                                                visible="false"
+                                                                                                                accessible="false"
+                                                                                                                x="0"
+                                                                                                                y="-15"
+                                                                                                                width="414"
+                                                                                                                height="737"
+                                                                                                                index="0"/>
                                                                                                     </XCUIElementTypeOther>
-                                                                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="1">
-                                                                                                        <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" enabled="true" visible="true" accessible="true" x="206" y="360" width="2" height="16" index="0"/>
+                                                                                                    <XCUIElementTypeOther
+                                                                                                            type="XCUIElementTypeOther"
+                                                                                                            enabled="true"
+                                                                                                            visible="true"
+                                                                                                            accessible="false"
+                                                                                                            x="0" y="0"
+                                                                                                            width="414"
+                                                                                                            height="736"
+                                                                                                            index="1">
+                                                                                                        <XCUIElementTypeStaticText
+                                                                                                                type="XCUIElementTypeStaticText"
+                                                                                                                enabled="true"
+                                                                                                                visible="true"
+                                                                                                                accessible="true"
+                                                                                                                x="206"
+                                                                                                                y="360"
+                                                                                                                width="2"
+                                                                                                                height="16"
+                                                                                                                index="0"/>
                                                                                                     </XCUIElementTypeOther>
                                                                                                 </XCUIElementTypeOther>
                                                                                             </XCUIElementTypeOther>
@@ -40,13 +182,57 @@
                                                                                     </XCUIElementTypeScrollView>
                                                                                 </XCUIElementTypeOther>
                                                                             </XCUIElementTypeOther>
-                                                                            <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="552" width="414" height="164" index="2">
-                                                                                <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in Sign up" label="Log in Sign up" enabled="true" visible="true" accessible="false" x="0" y="552" width="414" height="132" index="0">
-                                                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in" label="Log in" enabled="true" visible="true" accessible="false" x="41" y="566" width="332" height="46" index="0">
-                                                                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Log in" label="Log in" enabled="true" visible="true" accessible="true" x="41" y="566" width="332" height="46" index="0"/>
+                                                                            <XCUIElementTypeOther
+                                                                                    type="XCUIElementTypeOther"
+                                                                                    name="Log in Sign up"
+                                                                                    label="Log in Sign up"
+                                                                                    enabled="true" visible="true"
+                                                                                    accessible="false" x="0" y="552"
+                                                                                    width="414" height="164" index="2">
+                                                                                <XCUIElementTypeOther
+                                                                                        type="XCUIElementTypeOther"
+                                                                                        name="Log in Sign up"
+                                                                                        label="Log in Sign up"
+                                                                                        enabled="true" visible="true"
+                                                                                        accessible="false" x="0" y="552"
+                                                                                        width="414" height="132"
+                                                                                        index="0">
+                                                                                    <XCUIElementTypeOther
+                                                                                            type="XCUIElementTypeOther"
+                                                                                            name="Log in" label="Log in"
+                                                                                            enabled="true"
+                                                                                            visible="true"
+                                                                                            accessible="false" x="41"
+                                                                                            y="566" width="332"
+                                                                                            height="46" index="0">
+                                                                                        <XCUIElementTypeOther
+                                                                                                type="XCUIElementTypeOther"
+                                                                                                name="Log in"
+                                                                                                label="Log in"
+                                                                                                enabled="true"
+                                                                                                visible="true"
+                                                                                                accessible="true" x="41"
+                                                                                                y="566" width="332"
+                                                                                                height="46" index="0"/>
                                                                                     </XCUIElementTypeOther>
-                                                                                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="Sign up" label="Sign up" enabled="true" visible="true" accessible="false" x="41" y="632" width="332" height="46" index="1">
-                                                                                        <XCUIElementTypeOther type="XCUIElementTypeOther" name="Sign up" label="Sign up" enabled="true" visible="true" accessible="true" x="41" y="632" width="332" height="46" index="0"/>
+                                                                                    <XCUIElementTypeOther
+                                                                                            type="XCUIElementTypeOther"
+                                                                                            name="Sign up"
+                                                                                            label="Sign up"
+                                                                                            enabled="true"
+                                                                                            visible="true"
+                                                                                            accessible="false" x="41"
+                                                                                            y="632" width="332"
+                                                                                            height="46" index="1">
+                                                                                        <XCUIElementTypeOther
+                                                                                                type="XCUIElementTypeOther"
+                                                                                                name="Sign up"
+                                                                                                label="Sign up"
+                                                                                                enabled="true"
+                                                                                                visible="true"
+                                                                                                accessible="true" x="41"
+                                                                                                y="632" width="332"
+                                                                                                height="46" index="0"/>
                                                                                     </XCUIElementTypeOther>
                                                                                 </XCUIElementTypeOther>
                                                                             </XCUIElementTypeOther>
@@ -67,15 +253,29 @@
                 </XCUIElementTypeOther>
             </XCUIElementTypeOther>
         </XCUIElementTypeWindow>
-        <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="736" index="1">
-            <XCUIElementTypeStatusBar type="XCUIElementTypeStatusBar" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="20" index="0">
-                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false" x="0" y="0" width="414" height="20" index="0"/>
-                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0" y="0" width="414" height="20" index="1">
-                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="No SIM" label="No SIM" enabled="true" visible="true" accessible="true" x="6" y="0" width="41" height="20" index="0"/>
-                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="3 of 3 Wi-Fi bars" label="3 of 3 Wi-Fi bars" enabled="true" visible="true" accessible="true" x="52" y="0" width="14" height="20" index="1"/>
-                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="3:03 PM" label="3:03 PM" enabled="true" visible="true" accessible="true" x="184" y="0" width="50" height="20" index="2"/>
-                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="100% battery power, On AC Power" label="100% battery power, On AC Power" enabled="true" visible="true" accessible="true" x="340" y="0" width="69" height="20" index="3"/>
-                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="100% battery power" label="100% battery power" enabled="true" visible="false" accessible="false" x="340" y="0" width="31" height="20" index="4"/>
+        <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" accessible="false" x="0" y="0"
+                               width="414" height="736" index="1">
+            <XCUIElementTypeStatusBar type="XCUIElementTypeStatusBar" enabled="true" visible="true" accessible="false"
+                                      x="0" y="0" width="414" height="20" index="0">
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" accessible="false"
+                                      x="0" y="0" width="414" height="20" index="0"/>
+                <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" accessible="false" x="0"
+                                      y="0" width="414" height="20" index="1">
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="No SIM" label="No SIM" enabled="true"
+                                          visible="true" accessible="true" x="6" y="0" width="41" height="20"
+                                          index="0"/>
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="3 of 3 Wi-Fi bars" label="3 of 3 Wi-Fi bars"
+                                          enabled="true" visible="true" accessible="true" x="52" y="0" width="14"
+                                          height="20" index="1"/>
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="3:03 PM" label="3:03 PM" enabled="true"
+                                          visible="true" accessible="true" x="184" y="0" width="50" height="20"
+                                          index="2"/>
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="100% battery power, On AC Power"
+                                          label="100% battery power, On AC Power" enabled="true" visible="true"
+                                          accessible="true" x="340" y="0" width="69" height="20" index="3"/>
+                    <XCUIElementTypeOther type="XCUIElementTypeOther" name="100% battery power"
+                                          label="100% battery power" enabled="true" visible="false" accessible="false"
+                                          x="340" y="0" width="31" height="20" index="4"/>
                 </XCUIElementTypeOther>
             </XCUIElementTypeStatusBar>
         </XCUIElementTypeWindow>

@@ -16,7 +16,7 @@ public class PropertyWorker {
     public PropertyWorker() {
         properties = new Properties();
         try {
-            if(new File(path).exists()){
+            if (new File(path).exists()) {
                 file = new FileInputStream(path);
                 properties.load(file);
                 file.close();
@@ -35,19 +35,22 @@ public class PropertyWorker {
         }
         return propertyWorker;
     }
+
     //If necessary, if there are problems with the synchronization of drivers, use 'synchronized'
     public Properties getProperties() {
         return getInstance().properties;
     }
+
     //If necessary, if there are problems with the synchronization of drivers, use 'synchronized'
-    public String getProperty(String name){
+    public String getProperty(String name) {
         return getProperties().getProperty(name);
     }
+
     //If necessary, if there are problems with the synchronization of drivers, use 'synchronized'
     public void setProperty(String name, String value) {
         if (new File(path).exists()) {
             setDataToProp(name, value);
-        }else {
+        } else {
             File file = new File(path);
             try {
                 file.createNewFile();
@@ -59,6 +62,7 @@ public class PropertyWorker {
         }
 
     }
+
     //If necessary, if there are problems with the synchronization of drivers, use 'synchronized'
     private void setDataToProp(String name, String value) {
         try {
@@ -73,7 +77,7 @@ public class PropertyWorker {
 
     }
 
-    public void removeAllProperty(){
+    public void removeAllProperty() {
         File file = new File(path);
         file.deleteOnExit();
         ConsoleLogger.log.info("File property is deleted");

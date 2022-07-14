@@ -23,6 +23,7 @@ public class IosNativeSelector {
         else locator += " AND identifier == '" + value + "'";
         return this;
     }
+
     public IosNativeSelector name(String value) {
         ///https://developer.apple.com/documentation/xctest/xcuielementtype
         if (locator.isEmpty()) locator += "name == '" + value + "'";

@@ -14,7 +14,7 @@ public class RunnerIos {
         testNG.setDefaultTestName("WB iOS mobile tests");
 
         boolean hasFailures = Configurator.runTestsForSuite(Configurator.getSuits(Configurator.iosXMLPath()), testNG);
-        Configurator.sendDataToTR(false, logger,"test WB suite");
+        Configurator.sendDataToTR(false, logger, "test WB suite");
         Configurator.sendDataToSlack(false, logger, "Android WayBetter");
         Configurator.getGenerationLineChart(true);
         System.exit(hasFailures ? 1 : 0);

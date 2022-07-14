@@ -177,8 +177,8 @@ public class TestRailApi {
             List<Run> runFiltered = testRail.runs().
                     list(projectId).execute().
                     stream().filter(
-                    r -> r.getName().contains(packageId) &&
-                            r.getName().contains(formForFilter.format(date)))
+                            r -> r.getName().contains(packageId) &&
+                                    r.getName().contains(formForFilter.format(date)))
                     .collect(Collectors.toList());
             if (runFiltered.size() > 0) {
                 testRail.runs().delete(runFiltered.get(0).getId()).execute();
@@ -186,8 +186,8 @@ public class TestRailApi {
         }
 
         run = testRail.runs().add(projectId, new Run().setSuiteId(suiteId)
-                .setDescription("Test app: ".concat(packageId))
-                .setName(name.concat(formatter.format(date))))
+                        .setDescription("Test app: ".concat(packageId))
+                        .setName(name.concat(formatter.format(date))))
                 .execute();
         dataRun = run;
     }
@@ -200,8 +200,8 @@ public class TestRailApi {
         Run run = testRail.runs().
                 list(projectId).execute().
                 stream().filter(
-                r -> r.getName().contains(pId) &&
-                        r.getName().contains(formForFilter.format(date)))
+                        r -> r.getName().contains(pId) &&
+                                r.getName().contains(formForFilter.format(date)))
                 .findFirst().get();
 
         String current = run.getDescription();
@@ -393,8 +393,8 @@ public class TestRailApi {
 
             Run run = testRail.runs().list(projectId).execute().
                     stream().filter(
-                    r -> r.getName().contains(runName) &&
-                            r.getName().contains(formForFilter.format(date)))
+                            r -> r.getName().contains(runName) &&
+                                    r.getName().contains(formForFilter.format(date)))
                     .findFirst().get();
 
             ConsoleLogger.log.info("Attach BS session links to the failed tests.");

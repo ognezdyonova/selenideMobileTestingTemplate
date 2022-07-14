@@ -35,7 +35,7 @@ public class ServerManager {
         Scanner scanner = null;
         try {
             scanner = new Scanner(Runtime.getRuntime().exec(command).getInputStream()).useDelimiter("\\A");
-            if(scanner.hasNext()) output = scanner.next();
+            if (scanner.hasNext()) output = scanner.next();
         } catch (IOException e) {
             throw new RuntimeException(e.getMessage());
         }

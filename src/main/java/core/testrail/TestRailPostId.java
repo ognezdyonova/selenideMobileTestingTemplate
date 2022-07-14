@@ -9,7 +9,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface TestRailPostId {
 
-    int testRailId() default  0;
+    int testRailId() default 0;
+
     String[] tags() default "";
 
 }

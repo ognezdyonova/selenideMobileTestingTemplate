@@ -9,6 +9,7 @@ import java.util.Random;
 
 public class GenerationData {
     private static final int PHONE_NUMBER_LENGTH = 13;
+
     public static String getRandomString() {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
         StringBuilder salt = new StringBuilder();
@@ -32,6 +33,7 @@ public class GenerationData {
         return salt.toString();
 
     }
+
     public static String getRandomText(Integer i) {
         String SALTCHARS = "ABCD EFGHIJK LMNOPQ RSTUVW XYZ1 234 5 6789 0";
         StringBuilder salt = new StringBuilder();
@@ -52,7 +54,7 @@ public class GenerationData {
             int index = (int) (rnd.nextFloat() * SALTCHARS.length());
             salt.append(SALTCHARS.charAt(index));
         }
-        return salt.toString()+ "007!";
+        return salt.toString() + "007!";
     }
 
     public static String getRandomEmail() {
@@ -120,13 +122,13 @@ public class GenerationData {
         return arr.get(id);
     }
 
-    public static String getSensitiveString(String string){
+    public static String getSensitiveString(String string) {
         String newStr = "";
         for (int i = 0; i < string.length(); i++) {
             int random = (int) (Math.random() * 2);
             if (random == 1) {
                 newStr += Character.toString(string.charAt(i)).toLowerCase();
-            }else {
+            } else {
                 newStr += Character.toString(string.charAt(i)).toUpperCase();
             }
         }

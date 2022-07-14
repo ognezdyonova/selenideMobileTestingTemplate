@@ -1,7 +1,7 @@
 package api.apps.waybetter.waybetter_app.ios.sign_up_screen;
 
-import core.selectors.native_selectors.IosNativeSelector;
 import core.selectors.native_selectors.IOSUiObject;
+import core.selectors.native_selectors.IosNativeSelector;
 
 public class SignUpScreen {
     private static IOSUiObject

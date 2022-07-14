@@ -11,7 +11,7 @@ import java.util.*;
 
 public class CustomListener extends TestListenerAdapter {
     private static Date date = new Date();
-    public TestRailApi testRailApi ;
+    public TestRailApi testRailApi;
     private ITestNGMethod[] allMethods;
     public IResultMap skipTests;
     public static StringWriter requestWriter;
@@ -19,7 +19,7 @@ public class CustomListener extends TestListenerAdapter {
     public static StringWriter responseWriter;
     public static PrintStream responseCupture;
     private static Map<String, Map<String, StringWriter>> recSpecMap = new HashMap<String, Map<String, StringWriter>>();
-    private static   Map<String,Long> timeStamp = new HashMap<String,Long>();
+    private static Map<String, Long> timeStamp = new HashMap<String, Long>();
     private String name;
     private static boolean debug = false;
     private long startTime;
@@ -30,7 +30,7 @@ public class CustomListener extends TestListenerAdapter {
     public void onTestStart(ITestResult result) {
         super.onTestStart(result);
         testClassName = null;
-        CustomLogger.log.info("["+getCurrentTime()+"] "+"Test "+ result.getName() + " is start");
+        CustomLogger.log.info("[" + getCurrentTime() + "] " + "Test " + result.getName() + " is start");
         startTime = System.currentTimeMillis();
     }
 
@@ -44,9 +44,9 @@ public class CustomListener extends TestListenerAdapter {
     @Override
     public void onTestSuccess(ITestResult tr) {
         super.onTestSuccess(tr);
-        CustomLogger.log.info( "[+] "+tr.getName()+ ": is success" + " ["+getCurrentTime()+"]");
+        CustomLogger.log.info("[+] " + tr.getName() + ": is success" + " [" + getCurrentTime() + "]");
         endTime = System.currentTimeMillis();
-        setTimeStamp(tr.getTestClass().getName()+"."+tr.getName(), endTime-startTime);
+        setTimeStamp(tr.getTestClass().getName() + "." + tr.getName(), endTime - startTime);
         startTime = 0;
         endTime = 0;
     }
@@ -54,12 +54,12 @@ public class CustomListener extends TestListenerAdapter {
     @Override
     public void onTestFailure(ITestResult tr) {
         super.onTestFailure(tr);
-        CustomLogger.log.info("[-] "+tr.getName()+ ": is fail"+ " ["+getCurrentTime()+"]");
+        CustomLogger.log.info("[-] " + tr.getName() + ": is fail" + " [" + getCurrentTime() + "]");
         endTime = System.currentTimeMillis();
-        setTimeStamp(tr.getName(), endTime-startTime);
+        setTimeStamp(tr.getName(), endTime - startTime);
         startTime = 0;
         endTime = 0;
-        if(!Boolean.parseBoolean(Prop.getField("bs.available")))
+        if (!Boolean.parseBoolean(Prop.getField("bs.available")))
             new ScreenshotCaptureMobile().drawDots(tr.getName());
     }
 
@@ -67,7 +67,7 @@ public class CustomListener extends TestListenerAdapter {
     public void onTestSkipped(ITestResult tr) {
         CustomLogger.log.info("Test '" + tr.getName() + "' SKIPPED");
         endTime = System.currentTimeMillis();
-        setTimeStamp(tr.getName(), endTime-startTime);
+        setTimeStamp(tr.getName(), endTime - startTime);
         startTime = 0;
         endTime = 0;
     }
@@ -98,65 +98,66 @@ public class CustomListener extends TestListenerAdapter {
         return allMethods;
     }
 
-    public String getCurrentTime(){
+    public String getCurrentTime() {
         Calendar calendar = Calendar.getInstance();
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/mm/yyyy hh:mm:ss");
         return simpleDateFormat.format(calendar.getTime());
     }
 
     @Deprecated
-    public String getSimpleReports( String blockName, List<ITestResult> list){
+    public String getSimpleReports(String blockName, List<ITestResult> list) {
         List<String> newString = new ArrayList<>();
-        newString.add("*"+blockName+" tests:*\n");
-        if(!list.isEmpty()){
-            list.forEach((test)->{
+        newString.add("*" + blockName + " tests:*\n");
+        if (!list.isEmpty()) {
+            list.forEach((test) -> {
 
                 String testName = test.getMethod().getMethodName();
-                Float timeStamp = (float)(test.getEndMillis()-test.getStartMillis())/1000;
-                String line = testName+" *time:* "+timeStamp+"\n";
-                newString.add(line);            });
-            return String.join(" ",newString);
-        }else {
+                Float timeStamp = (float) (test.getEndMillis() - test.getStartMillis()) / 1000;
+                String line = testName + " *time:* " + timeStamp + "\n";
+                newString.add(line);
+            });
+            return String.join(" ", newString);
+        } else {
             newString.add("_Block is empty_");
-            return String.join(" ",newString);
+            return String.join(" ", newString);
         }
 
     }
 
-    public String newReport(String blockName, IResultMap list){
+    public String newReport(String blockName, IResultMap list) {
         List<String> newString = new ArrayList<>();
-        newString.add("*"+blockName+" tests:*\n");
+        newString.add("*" + blockName + " tests:*\n");
 
         if (!list.getAllMethods().isEmpty()) {
             list.getAllMethods().forEach(iTestNGMethod -> {
                 String testName = iTestNGMethod.getMethodName();
 //                String instants = iTestNGMethod.getInstance().toString();
-                String line = testName +"\n";
+                String line = testName + "\n";
                 newString.add(line);
             });
-            return String.join(" ",newString);
+            return String.join(" ", newString);
         } else {
             newString.add("_Block is empty_");
-            return String.join(" ",newString);
+            return String.join(" ", newString);
         }
     }
 
-    public String newReport(String blockName, List<ITestNGMethod> list){
+    public String newReport(String blockName, List<ITestNGMethod> list) {
         List<String> newString = new ArrayList<>();
-        newString.add("\n*"+blockName+" tests:*\n");
+        newString.add("\n*" + blockName + " tests:*\n");
 
         if (!list.isEmpty()) {
             list.forEach(iTestNGMethod -> {
 
                 String testName = iTestNGMethod.getMethodName();
 //                String instants = iTestNGMethod.getInstance().toString();
-                String line = iTestNGMethod.getTestClass().getName()+ "-->" +testName +"\n";
+                String line = iTestNGMethod.getTestClass().getName() + "-->" + testName + "\n";
                 newString.add(line);
             });
-            return String.join(" ",newString);
+            return String.join(" ", newString);
         } else {
             newString.add("_Block is empty_");
-            return String.join(" ",newString);
+            return String.join(" ", newString);
         }
     }
 
@@ -165,7 +166,7 @@ public class CustomListener extends TestListenerAdapter {
     }
 
     public static void setRecSpecMap(String name, Map<String, StringWriter> data) {
-        getRecSpecMap().put(name,data);
+        getRecSpecMap().put(name, data);
     }
 
     public static Map<String, Long> getTimeStamp() {
@@ -173,10 +174,10 @@ public class CustomListener extends TestListenerAdapter {
     }
 
     public static void setTimeStamp(String name, Long time) {
-        getTimeStamp().put(name,time);
+        getTimeStamp().put(name, time);
     }
 
-    public static void debugging(boolean debugStatus){
+    public static void debugging(boolean debugStatus) {
         debug = debugStatus;
     }
 

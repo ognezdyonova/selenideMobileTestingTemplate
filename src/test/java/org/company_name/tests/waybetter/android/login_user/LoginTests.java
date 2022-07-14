@@ -291,6 +291,7 @@ public class LoginTests extends TestPrime {
                 .single()
                 .shouldBe(Condition.visible);
     }
+
     @Test(dependsOnMethods = {"signUpWithEmptyForm", "signUpWithDifferentPasswords"})
     public void signUpWithRandomData() {
         Android.apps.wayBetterAndroidApp.signUpScreen

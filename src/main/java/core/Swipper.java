@@ -145,21 +145,21 @@ public class Swipper {
 
         int left = midPoint.x - (int) ((size.width * 0.2) * 0.5);
         int right = midPoint.x + (int) ((size.width * 0.5) * 0.5);
-            swipe(new Point(right/2, midPoint.y), new Point(left/2, midPoint.y), SCROLL_DUR);
+        swipe(new Point(right / 2, midPoint.y), new Point(left / 2, midPoint.y), SCROLL_DUR);
     }
 
     public enum ScrollDirection {
         UP, DOWN, LEFT, RIGHT
     }
 
-    private Point getPointOnCircle (int step, int totalSteps, Point origin, double radius) {
-        double theta = 2 * Math.PI * ((double)step / totalSteps);
-        int x = (int)Math.floor(Math.cos(theta) * radius);
-        int y = (int)Math.floor(Math.sin(theta) * radius);
+    private Point getPointOnCircle(int step, int totalSteps, Point origin, double radius) {
+        double theta = 2 * Math.PI * ((double) step / totalSteps);
+        int x = (int) Math.floor(Math.cos(theta) * radius);
+        int y = (int) Math.floor(Math.sin(theta) * radius);
         return new Point(origin.x + x, origin.y + y);
     }
 
-    private void drawCircle (Point origin, double radius, int steps) {
+    private void drawCircle(Point origin, double radius, int steps) {
         AppiumDriver driver = getDriver();
 
         Point firstPoint = getPointOnCircle(0, steps, origin, radius);
@@ -193,7 +193,10 @@ public class Swipper {
         drawCircle(rightEye, 20, 20);
         drawCircle(mouth, 40, 20);
 
-        try { Thread.sleep(5000); } catch (InterruptedException ign) {}
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException ign) {
+        }
     }
 
 

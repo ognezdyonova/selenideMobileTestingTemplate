@@ -1,7 +1,6 @@
 package api.apps.waybetter.waybetter_app.ios;
 
 import api.Ios.Ios;
-
 import api.apps.waybetter.waybetter_app.ios.login_screen.LoginScreen;
 import api.apps.waybetter.waybetter_app.ios.sign_up_screen.SignUpScreen;
 import api.apps.waybetter.waybetter_app.ios.welcome_screen.WelcomeScreen;

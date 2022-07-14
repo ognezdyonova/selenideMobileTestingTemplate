@@ -1,7 +1,7 @@
 package api.apps.waybetter.waybetter_app.ios.login_screen;
 
-import core.selectors.native_selectors.IosNativeSelector;
 import core.selectors.native_selectors.IOSUiObject;
+import core.selectors.native_selectors.IosNativeSelector;
 
 public class LoginScreen {
     private static IOSUiObject

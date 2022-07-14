@@ -72,14 +72,14 @@ public class WayBetterAndroidApp implements Activity, Application {
         new SwitcherContexts("NATIVE_APP").waitToAppear(100).switchToContext();
     }
 
-    public void offline(){
+    public void offline() {
         if (Boolean.parseBoolean(Prop.getField("bs.available")))
             new BSApi().setNetworkProfile(NetworkProfiles.NO_NETWORK);
         else
             Android.adb.turnOnWiFi(false);
     }
 
-    public void online(){
+    public void online() {
         if (Boolean.parseBoolean(Prop.getField("bs.available")))
             new BSApi().setNetworkProfile(NetworkProfiles.RESET);
         else

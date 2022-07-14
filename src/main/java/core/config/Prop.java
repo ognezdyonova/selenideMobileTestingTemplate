@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.Properties;
 
 public class Prop {
-    private static final String filePatch = "conf/config.properties";
+    private static final String filePatch = "config.properties";
 
     public static String getField(String filed) {
         String field = null;

@@ -29,7 +29,7 @@ public class SwitcherContexts {
     private boolean exists() {
         boolean state = false;
         Set contexts = null;
-        if(DriverManager.getAndroidDriver() !=null) contexts = Android.driver().getContextHandles();
+        if (DriverManager.getAndroidDriver() != null) contexts = Android.driver().getContextHandles();
         else contexts = DriverManager.getIosDriver().getContextHandles();
 
         System.out.println(contexts);

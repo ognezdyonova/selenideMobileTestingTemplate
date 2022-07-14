@@ -6,13 +6,12 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.MapperFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import core.api_requester.core.rest.loggers.ConsoleLogger;
-import core.api_requester.core.rest.loggers.Logger;
+import core.ConsoleLogger;
+import core.Logger;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.common.mapper.TypeRef;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
-import io.restassured.http.ContentType;
 import io.restassured.http.Cookies;
 import io.restassured.http.Method;
 import io.restassured.parsing.Parser;
@@ -22,8 +21,6 @@ import io.restassured.specification.ResponseSpecification;
 import lombok.NonNull;
 import lombok.SneakyThrows;
 import org.apache.commons.io.output.WriterOutputStream;
-import org.hamcrest.CustomMatcher;
-import org.hamcrest.Description;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
@@ -96,7 +93,7 @@ public abstract class Requester<T> {
             REQUEST_SPEC.formParams(this.customFormParams).relaxedHTTPSValidation();
         else if (formParams() != null)
             REQUEST_SPEC.formParams(formParams()).relaxedHTTPSValidation();
-        else  if (multiPart() != null)
+        else if (multiPart() != null)
             REQUEST_SPEC.multiPart("file", multiPart()).relaxedHTTPSValidation();
 
         if (this.authToken != null)
@@ -261,7 +258,6 @@ public abstract class Requester<T> {
     public ResponseSpecification responseSpecification() {
         RESPONSE_BUILDER = new ResponseSpecBuilder();
         RESPONSE_BUILDER.expectStatusCode(Matchers.anyOf(
-                new StatusCodeCustomMatcher("New status code specification"),
                 Matchers.in(Arrays.asList(200, 201, 202, 203, 204, 205, 206))
         ));
         RESPONSE_BUILDER.registerParser("text/html", Parser.JSON);
@@ -271,6 +267,7 @@ public abstract class Requester<T> {
 
     /**
      * Set up new token for request
+     *
      * @param token user token
      * @return Requester<T>
      */
@@ -325,25 +322,4 @@ public abstract class Requester<T> {
 
         return state;
     }
-
-    private class StatusCodeCustomMatcher extends CustomMatcher<Integer> {
-        public StatusCodeCustomMatcher(String description) {
-            super(description);
-        }
-
-        @Override
-        public boolean matches(Object actual) {
-            if ((Integer) actual != 204)
-                RESPONSE_BUILDER.expectContentType(ContentType.JSON);
-            else
-                RESPONSE_BUILDER.expectContentType("");
-            return false;
-        }
-
-        @Override
-        public void describeMismatch(Object actual, Description mismatchDescription) {
-            mismatchDescription.appendText("skip");
-        }
-    }
-
 }

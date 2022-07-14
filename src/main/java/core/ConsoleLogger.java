@@ -7,8 +7,8 @@ public class ConsoleLogger {
     public static Logger log = Logger.getLogger(ConsoleLogger.class);
     private static boolean debug;
 
-    public static void debuggingApi(boolean debugStatus){
-        ConsoleLogger.log.info("Debug mode:"+ debugStatus);
+    public static void debuggingApi(boolean debugStatus) {
+        ConsoleLogger.log.info("Debug mode:" + debugStatus);
         debug = debugStatus;
     }
 
